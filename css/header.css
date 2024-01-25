@@ -10,6 +10,9 @@
 .logo{
     margin-right: 40px;
 }
+.logo_second{
+    display: none;
+}
 .find{
     display: flex;
     align-items: center;
@@ -69,4 +72,53 @@
 select{
     border: none;
     outline: none;
+}
+@media (max-width:768px) {
+    .logo .logo_first{
+        display: none;
+    }
+    .logo .logo_second{
+        display: block;
+    }
+    .logo{
+        margin-right: 20px;
+    }
+    .catalog_name{
+        display: none;
+    }
+    select{
+        display: none;
+    }
+    .find{
+        margin-right: 20px;
+    }
+    .heart, .box, .cart{
+        margin-right: 16px;
+    }
+    .avatar_name{
+        display: none;
+    }
+    .find_poduct input{
+        padding-right: 130px;
+    }
+}
+@media (max-width:360px) {
+    .catalog{
+        display: none;
+    }
+    .view{
+        display: none;
+    }
+    .avatar{
+        display: none;
+    }
+    .find_poduct input{
+        padding-right: 15px;
+    }
+    .find_poduct{
+        gap: 7px;
+    }
+    .logo{
+        margin-left: 5px;
+    }
 }
