@@ -1,6 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+}
+
+
+
+
+.conteiner {
+    max-width: 1208px;
+    margin: 0 auto;
+}
+
+.product__row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    max-width: 272px;
+    position: relative;
+    border-radius: 4px;
+    background: var(--Main-Surface, #FFF);
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card .card_head {
+    /* padding-top: 31.5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.card .card_head i {
+    position: absolute;
+    top: 8px;
+    left: 230px;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    opacity: 0.5;
+    background: var(--Grayscale-Lightest, #F3F2F1);
+    cursor: pointer;
+    display: none;
+    transition: .8s;
+}
+
+.card .card_head .akciya {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    display: inline-flex;
+    padding: 4px 8px;
+    align-items: flex-end;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--Main-Primary, #F63);
+    color: var(--Main-onPrimary, #FFF);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.card_footer {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card_footer p {
+    color: var(--Main-onSurface, #414141);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.summa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.summa .fee_with_card h3 {
+    color: var(--Main-onSurface, #414141);
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.summa .payment_in_cash h4 {
+    color: var(--Grayscale-Hardest, #606060);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.summa p {
+    color: var(--Grayscale-Light, #BFBFBF);
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.card_footer button {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--Main-Secondary, #70C05B);
+    cursor: pointer;
+    color: var(--Main-Secondary, #70C05B);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: .3s;
+}
+
+.card_footer button:hover {
+    background: var(--Main-Primary, #F63);
+    border-color: #F63;
+    color: #fff;
+}
+.card .card_head:hover i{
+        display: block;
+}
+
+.card .card_head:hover{
+    padding-top: 0;
+}
+
+.reiting .reiting_star{
+    font-size : 25px;
+    cursor: pointer;
+}
+
+.reiting{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reiting_star:hover,
+.reiting_star:hover ~ .reiting_star{
+    color: #BFBFBF;
+}
+
+.reiting[data-total-value="5"] .reiting_star:nth-child(n + 1),
+.reiting[data-total-value="4"] .reiting_star:nth-child(n + 2),
+.reiting[data-total-value="3"] .reiting_star:nth-child(n + 3),
+.reiting[data-total-value="2"] .reiting_star:nth-child(n + 4),
+.reiting[data-total-value="1"] .reiting_star:nth-child(n + 5){
+    color: darkorange;
 }
