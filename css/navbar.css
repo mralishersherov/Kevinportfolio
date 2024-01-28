@@ -1,4 +1,4 @@
-<<<<<<<<< Temporary merge branch 1
+
 *{
     padding: 0;
     margin: 0;
@@ -38,7 +38,7 @@ body{
     font-weight: 700;
     line-height: 150%;
     padding-top: 70px; 
-=========
+ }
 .row{
     display: flex;
     align-items: center;
@@ -114,7 +114,7 @@ select{
     border: none;
     outline: none;
 }
-@media (max-width:768px) {
+@media (max-width:737px) {
     .logo .logo_first{
         display: none;
     }
@@ -162,5 +162,5 @@ select{
     .logo{
         margin-left: 5px;
     }
->>>>>>>>> Temporary merge branch 2
+
 }

@@ -1,4 +1,66 @@
-.loc{
-    color: red;
-    font-size: 40px;
+.locate{
+    margin-top: 120px;
+}
+.name_locate{
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    color: var(--Main-onSurface, #414141);
+}
+.buttons_loc{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+.btn_loc{
+    width: 97px;
+    height: 32px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--Grayscale-Lightest, #F3F2F1);
+    border-radius: 4px;
+    border: none;
+    transition: 1s;
+}
+.btn_loc:hover{
+    border-radius: 4px;
+    background: var(--Main-Secondary, #70C05B);
+    color: var(--Main-onSecondary, #FFF);
+}
+.almalyk{
+    display: none;
+
+}
+.tashkent{
+    display: none;
+}
+.nigeria{
+    display: none;
+}
+@media (max-width:737px) {
+    .container{
+        max-width: 737px;
+    }
+    .name_locate{
+        font-size: 24px;
+    }
+    .big_map iframe{
+        width: 737px;
+    }
+}
+@media (max-width:360px) {
+    .container{
+        max-width: 360px;
+    }
+    .big_map iframe{
+        width: 360px;
+    }
+    .buttons_loc{
+        flex-wrap: wrap;
+    }
 }
