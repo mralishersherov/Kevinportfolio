@@ -1,3 +1,4 @@
+<<<<<<<<< Temporary merge branch 1
 *{
     padding: 0;
     margin: 0;
@@ -37,4 +38,129 @@ body{
     font-weight: 700;
     line-height: 150%;
     padding-top: 70px; 
+=========
+.row{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 11px;
+}
+:focus{
+    outline: none;
+}
+.logo{
+    margin-right: 40px;
+}
+.logo_second{
+    display: none;
+}
+.find{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 40px;
+}
+.catalog{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    padding: 8px;
+    background: var(--Main-Secondary, #70C05B);
+}
+.catalog p{
+    color: var(--Main-onSecondary, #FFF);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.find_poduct{
+    display: flex;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Main-Secondary, #70C05B);
+    background: var(--Main-Surface, #FFF);
+    gap: 15px;
+}
+.find_poduct input{
+    border: none;
+    padding-right: 200px;
+}
+.view{
+    display: flex;
+}
+.heart, .box, .cart{
+    text-align: center;
+    margin-right: 24px;
+}
+.heart, .box, .cart p{
+    text-align: center;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--Main-onSurface, #414141);
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+select{
+    border: none;
+    outline: none;
+}
+@media (max-width:768px) {
+    .logo .logo_first{
+        display: none;
+    }
+    .logo .logo_second{
+        display: block;
+    }
+    .logo{
+        margin-right: 20px;
+    }
+    .catalog_name{
+        display: none;
+    }
+    select{
+        display: none;
+    }
+    .find{
+        margin-right: 20px;
+    }
+    .heart, .box, .cart{
+        margin-right: 16px;
+    }
+    .avatar_name{
+        display: none;
+    }
+    .find_poduct input{
+        padding-right: 130px;
+    }
+}
+@media (max-width:360px) {
+    .catalog{
+        display: none;
+    }
+    .view{
+        display: none;
+    }
+    .avatar{
+        display: none;
+    }
+    .find_poduct input{
+        padding-right: 15px;
+    }
+    .find_poduct{
+        gap: 7px;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+>>>>>>>>> Temporary merge branch 2
 }
