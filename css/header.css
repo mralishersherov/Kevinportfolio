@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 *{
     padding: 0;
     margin: 0;
@@ -38,7 +38,7 @@ body{
     font-weight: 700;
     line-height: 150%;
     padding-top: 70px; 
-=======
+=========
 .row{
     display: flex;
     align-items: center;
@@ -162,5 +162,5 @@ select{
     .logo{
         margin-left: 5px;
     }
->>>>>>> fecb456dc21f8b50da45c5263b6ccf75155dc3f6
+>>>>>>>>> Temporary merge branch 2
 }

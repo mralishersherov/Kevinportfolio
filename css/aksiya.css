@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -14,10 +15,13 @@
     margin: 0 auto;
 }
 
-.product__row{
+
+
+.product__row {
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 40px;
 }
 
 .card {
@@ -147,35 +151,51 @@
     border-color: #F63;
     color: #fff;
 }
-.card .card_head:hover i{
-        display: block;
+
+.card .card_head:hover i {
+    display: block;
+    transition: 8s;
+    /* transform: translateX(-10px); */
 }
 
-.card .card_head:hover{
+.card .card_head:hover {
     padding-top: 0;
 }
 
-.reiting .reiting_star{
-    font-size : 25px;
+.reiting .reiting_star {
+    font-size: 25px;
     cursor: pointer;
 }
 
-.reiting{
+.reiting {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.reiting_star:hover,
-.reiting_star:hover ~ .reiting_star{
-    color: #BFBFBF;
+
+
+.card_text {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-.reiting[data-total-value="5"] .reiting_star:nth-child(n + 1),
-.reiting[data-total-value="4"] .reiting_star:nth-child(n + 2),
-.reiting[data-total-value="3"] .reiting_star:nth-child(n + 3),
-.reiting[data-total-value="2"] .reiting_star:nth-child(n + 4),
-.reiting[data-total-value="1"] .reiting_star:nth-child(n + 5){
-    color: darkorange;
+.card_text h1 {
+    color: #414141;
+    font-family: Rubik;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    /* 54px */
+}
+
+.card_text p {
+    display: flex;
+    width: 168px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
