@@ -1,22 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-
-
-.conteiner {
-    max-width: 1208px;
-    margin: 0 auto;
-}
-
-
-
 .product__row {
     max-width: 100%;
     display: grid;
@@ -40,24 +22,25 @@
     flex: 1 0 0;
 }
 
-.card .card_head i {
+.card .card_head .like {
     position: absolute;
     top: 8px;
     left: 230px;
-    display: flex;
     width: 32px;
     height: 32px;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
+    padding: 20px;
     border-radius: 4px;
-    opacity: 0.5;
-    background: var(--Grayscale-Lightest, #F3F2F1);
+    /* opacity: 0.5; */
+    background:  #F3F2F1;
     cursor: pointer;
     display: none;
     transition: .8s;
+}
+
+.checkmark{
+    position: absolute;
+    top: 7px;
+    left: 73px;
 }
 
 .card .card_head .akciya {
@@ -152,7 +135,7 @@
     color: #fff;
 }
 
-.card .card_head:hover i {
+.card .card_head:hover .like {
     display: block;
     transition: 8s;
     /* transform: translateX(-10px); */
@@ -173,8 +156,6 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-
-
 
 .card_text {
     display: flex;
@@ -199,3 +180,71 @@
     align-items: center;
     gap: 8px;
 }
+
+
+.like input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .like {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 100ms;
+  }
+  
+  .checkmark {
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+  }
+  
+  .like input:checked ~ .checkmark path {
+    fill: #fc0404;
+    stroke-width: 0;
+  }
+  
+  .like input:checked ~ .checkmark {
+    animation: like_effect 400ms ease;
+  }
+  
+  .like:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
