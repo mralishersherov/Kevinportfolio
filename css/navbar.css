@@ -11,39 +11,20 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
-
+header{
+    padding: 20px;
+    background: var(---surface, #FFF);
+}
 .container {
     max-width: 1208px;
     margin: auto 0;
 }
 
-.home_header{
-    display: flex;
-    gap: 18px;
-    background-image: url(../images/header__img.png);
-}
-
-.home_left{
-    width: 303px;
-    height: 202px;
-    flex-shrink: 0;
-}
-
-.home_right{
-    color: var(--Main-onSurface, #414141);
-    text-align: center;
-    font-family: Rubik;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    padding-top: 70px; 
- }
 .row{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    margin-top: 11px;
+    
 }
 :focus{
     outline: none;

@@ -19,7 +19,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+html{
+    background: var(--Main-BGPage, #FBF8EC);
+}
 
 body{
     font-family: 'Rubik', sans-serif;

@@ -9,7 +9,7 @@
     line-height: 150%; 
     color: var(--Main-onSurface, #414141);
 }
-.buttons_loc{
+#buttons_loc{
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
@@ -32,16 +32,7 @@
     background: var(--Main-Secondary, #70C05B);
     color: var(--Main-onSecondary, #FFF);
 }
-.almalyk{
-    display: none;
 
-}
-.tashkent{
-    display: none;
-}
-.nigeria{
-    display: none;
-}
 @media (max-width:737px) {
     .container{
         max-width: 737px;
