@@ -70,7 +70,8 @@ function addToFavorite(id){
 
 
 function getCard(item) {
-    let { id, image, description, discount, rating, price, } = item;
+    console.log(item);
+    let { id, image, description, discount, rating, price,isNew} = item;
     let isFavorite = favoriteProductsCards.find((el) => el.id === id);
       
     return `
@@ -92,7 +93,10 @@ function getCard(item) {
             <div class="fee_with_card">
                 <h3> ${price} ₽</h3>
                 <p>С картой</p>
-            </div>
+                </div>
+                <div class="new__product">
+                <h3>${isNew?"NEW":''}</h3>
+                </div>
             <div class="payment_in_cash">
                 <h4>${discount}₽</h4>
                 <p>Обычная</p>
@@ -117,7 +121,8 @@ displayCard();
 
 function displayNewCards(){
     new_product_row.innerHTML = '';
-    products.forEach((el)=> {
+    products.filter((el)=> {
+        el.isNew = true
         new_product_row.innerHTML += getCard(el)
     })
 }
@@ -126,7 +131,7 @@ displayNewCards()
 function displayFilterCards(){
     filter_product.innerHTML = '';
     products.filter((el)=> {
-        el.price <= 60
+        el.rating = 5
         filter_product.innerHTML += getCard(el)
     })
 }

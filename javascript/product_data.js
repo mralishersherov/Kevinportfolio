@@ -7,7 +7,7 @@ const products = [
       price: 89,
       rating: 5,
       discount: 0,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/blin.png",
       country: "Uzb",
     },
@@ -32,7 +32,7 @@ const products = [
       price: 88,
       rating: 5,
       discount: 20,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/kolobasa.png",
     },
     {
@@ -56,7 +56,7 @@ const products = [
       price: 82,
       rating: 5,
       discount: 20,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/kolbasa_palka.png",
     },
     {
@@ -65,7 +65,7 @@ const products = [
       category: "meat",
       description:
         "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ...",
-      price: 91,
+      price: 0,
       rating: 3.5,
       discount: 50,
       isNew: false,
@@ -80,7 +80,7 @@ const products = [
       price: 68,
       rating: 3.5,
       discount: 20,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/kolobasa.png",
     },
     {
@@ -89,7 +89,7 @@ const products = [
       category: "dairy",
       description:
         "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      price: 61,
+      price: 0,
       rating: 4.5,
       discount: 20,
       isNew: false,
@@ -104,7 +104,7 @@ const products = [
       price: 98,
       rating: 5,
       discount: 20,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/kolbasa_desna.png",
     },
     {
@@ -125,10 +125,10 @@ const products = [
       category: "Meat",
       description:
         "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      price: 89,
+      price: 0,
       rating: 3.5,
       discount: 50,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/kolbasa_palka.png",
     },
     {
@@ -152,7 +152,7 @@ const products = [
       price: 100,
       rating: 5,
       discount: 50,
-      isNew: true,
+      isNew:  true,
       image: "./images/card_img/blin.png",
     },
     {
@@ -161,7 +161,7 @@ const products = [
       category: "dairy",
       description:
         "Молоко ПРОСТОКВАШИНО паст.питьевое цельное...",
-      price: 63,
+      price: 0,
       rating: 4.5,
       discount: 20,
       isNew: false,
