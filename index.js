@@ -40,7 +40,7 @@ let setati_row = document.querySelector(".stati__row");
 
 function getStatiCard(item) {
   let { image, description, discound, name, price, id, rating } = item;
-  return `  <div class="card">
+  return `  <div class="stati_card">
               <img src="${image}" alt="">
               <p class="card_number"> 05.03.2021</p>
               <h2 class="card_tittle">Режим использования масок и перчаток на территории магазинов</h2>
