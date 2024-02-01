@@ -1,5 +1,6 @@
 let product__row = document.querySelector('.product__row');
-
+const new_product_row = document.querySelector('.new_product__row');
+const filter_product = document.querySelector('.filter__product');
 let productCardsJson = localStorage.getItem(CART);
 let productCards = JSON.parse(productCardsJson) || [];
 
@@ -58,20 +59,20 @@ function addToCart(id){
 function addToFavorite(id){
     let product = products.find((el) => el.id === id)
     let chek = favoriteProductsCards.find((el) => el.id === id)
-    console.log(id)
     if(chek){
         favoriteProductsCards = favoriteProductsCards.filter((el) => el.id !== id)
     }else{
         favoriteProductsCards.push(product)
         localStorage.setItem(FAVORITE, JSON.stringify(favoriteProductsCards))
     }
-
+   getLikeCount()
 }
 
 
 function getCard(item) {
     let { id, image, description, discount, rating, price, } = item;
-    let isFavorite = favoriteProductsCards.find((id) => el.id === id);
+    let isFavorite = favoriteProductsCards.find((el) => el.id === id);
+      
     return `
     <div class="card item">
     <div class="card_head">
@@ -113,3 +114,20 @@ function displayCard() {
     })
 }
 displayCard();
+
+function displayNewCards(){
+    new_product_row.innerHTML = '';
+    products.forEach((el)=> {
+        new_product_row.innerHTML += getCard(el)
+    })
+}
+displayNewCards()
+
+function displayFilterCards(){
+    filter_product.innerHTML = '';
+    products.filter((el)=> {
+        el.price <= 60
+        filter_product.innerHTML += getCard(el)
+    })
+}
+displayFilterCards()

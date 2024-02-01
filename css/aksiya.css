@@ -65,7 +65,7 @@
     display: flex;
     padding: 8px;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 8px;
     align-self: stretch;
 }
@@ -137,25 +137,25 @@
 
 .card .card_head:hover .like {
     display: block;
-    transition: 8s;
-    /* transform: translateX(-10px); */
+    transition: 8s; 
 }
 
 .card .card_head:hover {
     padding-top: 0;
 }
 
-.reiting .reiting_star {
-    font-size: 25px;
-    cursor: pointer;
+.reiting {
+    max-width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   
 }
 
-.reiting {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+/* .reiting img{
+  width: 10px;
+} */
 
 .card_text {
     display: flex;

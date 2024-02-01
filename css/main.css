@@ -2,7 +2,7 @@
 /* global css */
 
 /* --------------------------- */
-@import url("header.css");
+@import url("navbar.css");
 @import url("free.css");
 @import url("new.css");
 @import url("special.css");
@@ -12,3 +12,22 @@
 @import url("card.css");
 @import url("footer.css");
 /* ---------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+html{
+    background: var(--Main-BGPage, #FBF8EC);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1208px;
+    margin: auto ;
+}
