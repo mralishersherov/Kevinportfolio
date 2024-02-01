@@ -17,12 +17,41 @@ function addToCart(id){
 
     if(chek) {
         product.quantity++;
+        Toastify({
+            text: "This is a toast",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
         productCards = getCard.map((el) => {
             return el.id === id ? product : el;
+            
         });
     }else{
         product.quantity = 1;
         productCards.push(product);
+        Toastify({
+            text: "This is a toast",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     }
     localStorage.setItem(CART, JSON.stringify(productCards))  
 }
@@ -36,7 +65,7 @@ function addToFavorite(id){
         favoriteProductsCards.push(product)
         localStorage.setItem(FAVORITE, JSON.stringify(favoriteProductsCards))
     }
-    
+
 }
 
 
@@ -84,14 +113,3 @@ function displayCard() {
     })
 }
 displayCard();
-
-
-
-
-
-
-
-    
-    
-    
-  
