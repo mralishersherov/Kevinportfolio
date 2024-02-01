@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
+
     <!-- header start  -->
     <header>
      <div class="container">
@@ -24,39 +25,48 @@
          </div>
          <div class="find">
              <div class="catalog">
-                 <img src="./assets/imgs/menu.png" alt="png">
+                 <img src="./assets/imgs/menu.svg" alt="svg">
                  <a href="index.html" class="catalog_name">Каталог</a>
              </div>
              <div class="find_poduct">
                  <input placeholder="Найти товар" type="text">
-                 <img src="./assets/imgs/search.png" alt="png">
+                 <img src="./assets/imgs/search.svg" alt="svg">
              </div>
          </div>
 
          <div class="view">
              <div class="heart">
-                 <img src="./assets/imgs/heart.png" alt="png">
+                 <img src="./assets/imgs/Shape (Stroke).svg" alt="svg">
                  <div>
                      <p>Избранное</p>
                      <span class="like_count">0</span>
                  </div>
              </div>
              <div class="box">
-                 <img src="./assets/imgs/box.png" alt="png">
+                 <img src="./assets/imgs/Frame 211.svg" alt="svg">
                  <p>Заказы</p>
              </div>
              <div class="cart">
-                 <img src="./assets/imgs/shopping-cart.png" alt="png">
+                 <img src="./assets/imgs/shopping-cart.svg" alt="svg">
                  <p>Корзина</p>
              </div>
          </div>
          <div class="avatar">
              <img src="./assets/imgs/avatar.png" alt="svg">
-             <p class="avatar_name">Алексей</p>
-             <select name="" id="">
-                 <option value="gfg">ru</option>
-             </select>
+             <button class="avatar_name">Алексей</button>
          </div>
+         <div class="modal_wrapper">
+            <div class="modal">
+                <h4>Вход</h4>
+                <form >
+                    <div class="form_group">
+                        <label for="phone">Телефон</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <button class="connect">Вход</button>
+                </form>
+            </div>
+        </div>
      </div>
      </div>
     
@@ -180,6 +190,7 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./javascript/modal-control.js"></script>
     <script src="./javascript/const.js"></script>
     <script src="./javascript/product_data.js"></script>
     <script src="./javascript/rating_product.js"></script>
