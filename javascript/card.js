@@ -1,6 +1,7 @@
 let product__row = document.querySelector('.product__row');
 const new_product_row = document.querySelector('.new_product__row');
 const filter_product = document.querySelector('.filter__product');
+const all__product = document.querySelector('.all_product__row');
 let productCardsJson = localStorage.getItem(CART);
 let productCards = JSON.parse(productCardsJson) || [];
 
@@ -70,12 +71,10 @@ function addToFavorite(id){
 
 
 function getCard(item) {
-    console.log(item);
     let { id, image, description, discount, rating, price,isNew} = item;
     let isFavorite = favoriteProductsCards.find((el) => el.id === id);
-      
     return `
-    <div class="card item">
+    <div class="card item  list-item">
     <div class="card_head">
     <label class="like">
   <input ${isFavorite ? "checked" : ""} type="checkbox" onClick=" addToFavorite(${id})">
@@ -136,3 +135,15 @@ function displayFilterCards(){
     })
 }
 displayFilterCards()
+
+function displayAllCard() {
+    product__row.innerHTML = "";
+    products.forEach((el) => {
+        product__row.innerHTML += getCard(el);
+    })
+}
+displayAllCard();
+
+
+
+
