@@ -1,6 +1,7 @@
 let product__row = document.querySelector('.product__row');
 const new_product_row = document.querySelector('.new_product__row');
 const filter_product = document.querySelector('.filter__product');
+const card_favorite = document.querySelector('.cards_row')
 let productCardsJson = localStorage.getItem(CART);
 let productCards = JSON.parse(productCardsJson) || [];
 
@@ -131,3 +132,4 @@ function displayFilterCards(){
     })
 }
 displayFilterCards()
+
