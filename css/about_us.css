@@ -1,0 +1,33 @@
+.about_us_head{
+    background-image: url(../images/about_us_bacground.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    display: flex;
+}
+
+.about_us_head_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.about_us_head img{
+    margin-top: 70px;
+}
+
+.about_us_head_text h2{
+    font-family: Rubik;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.about_us_head_text p{
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ff6633;
+}
+
+.about_us_footer_text{
+    display: flex;
+}

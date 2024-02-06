@@ -276,7 +276,7 @@ padding: 8px;
 border: none;
 width: 272px;
   }
-  .container{
+ .aside .container{
     display: flex;
   }
   .cards_row{
