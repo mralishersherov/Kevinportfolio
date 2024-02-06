@@ -5,8 +5,10 @@
 
 .home_header{
     display: flex;
-    gap: 20px;
     background-image: url(../images/header_backround.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
 }
 
 .home_left{

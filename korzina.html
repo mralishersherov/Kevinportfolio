@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/korzina.css"
+
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="row">
+        <div class="logo">
+            <img class="logo_first" src="./assets/imgs/logo.svg" alt="logo">
+            <img class="logo_second" src="./assets/icons/logo_second.svg" alt="logo">
+        </div>
+        <div class="find">
+            <div class="catalog">
+                <img src="./assets/imgs/menu.png" alt="png">
+                <a href="index.html" class="catalog_name">Каталог</a>
+            </div>
+            <div class="find_poduct">
+                <input placeholder="Найти товар" type="text">
+                <img src="./assets/imgs/search.png" alt="png">
+            </div>
+        </div>
+
+        <div class="view">
+            <div class="heart">
+                <img src="./assets/imgs/heart.png" alt="png">
+                <div>
+                    <p>Избранное</p>
+                    <span class="like_count">0</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./assets/imgs/box.png" alt="png">
+                <p>Заказы</p>
+            </div>
+            <div class="cart">
+                <img src="./assets/imgs/shopping-cart.png" alt="png">
+                <p>Корзина</p>
+            </div>
+        </div>
+        <div class="avatar">
+            <img src="./assets/imgs/avatar.png" alt="svg">
+            <p class="avatar_name">Алексей</p>
+            <select name="" id="">
+                <option value="gfg">ru</option>
+            </select>
+        </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="home_korzino">
+        <div class="home_link">
+          <p class="home_glavni"><a href="./index.html">Главная</a>
+          </p>
+          <p class="korzina"><a href="#">Корзина</a></p>
+        </div>
+        <h2>Корзина</h2>
+        <div class="all_del">
+          <p class="all"><a href="#">Выделить всё
+</a></p>
+          <button class="delete" onclick="deleteAll()">Удалить выбранные</button>
+        </div>
+      </div>
+      <div class="cart__product__row">
+
+      </div>
+    </section>
+  </main>
+  <script src="javascript/const.js"></script>
+  <script src="javascript/korzina.js"></script>
+</body>
+</html>
