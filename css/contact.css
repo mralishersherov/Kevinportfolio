@@ -1,0 +1,39 @@
+.contact{
+    display: flex;
+    gap: 30px;
+}
+
+.text_contact{
+    font-size: 64px;
+}
+
+
+
+.contact_text{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_text p{
+    font-style: 24px;
+    line-height: 36px
+}
+
+.contact_text h3{
+    font-style: 30px;
+    line-height: 36px
+}
+
+.contact_text .blue{
+    color: #0093C6;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.contact_text .red{
+    color: #AF212B;
+    font-size: 35px;
+    font-style: inherit;
+}

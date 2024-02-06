@@ -1,4 +1,8 @@
+
+
+
 .about_us_head{
+    margin-top: 30px;
     background-image: url(../images/about_us_bacground.png);
     background-repeat: repeat-x;
     background-size: contain;
@@ -28,6 +32,24 @@
     color: #ff6633;
 }
 
+.about_us_footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .about_us_footer_text{
+
+    max-width: 400px;
     display: flex;
 }
+
+.about_us_info{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+

@@ -12,7 +12,7 @@ function countProduct(){
     product__row.textContent = productCards.lenght
 }
 
-
+ 
 function addToCart(id){
     let product = products.find((el) => el.id === id);
     let chek = productCards.find((el) => el.id === id);
