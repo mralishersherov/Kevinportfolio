@@ -16,6 +16,7 @@
 @import url("contact.css");
 @import url("vacansy.css");
 /* ---------------------------- */
+@import url("favorite.css");
 *{
     padding: 0;
     margin: 0;
@@ -25,6 +26,7 @@
 }
 html{
     background: var(--Main-BGPage, #FBF8EC);
+
 }
 
 body{

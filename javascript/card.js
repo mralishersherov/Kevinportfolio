@@ -1,7 +1,7 @@
 let product__row = document.querySelector('.product__row');
 const new_product_row = document.querySelector('.new_product__row');
 const filter_product = document.querySelector('.filter__product');
-const all__product = document.querySelector('.all_product__row');
+const card_favorite = document.querySelector('.cards_row')
 let productCardsJson = localStorage.getItem(CART);
 let productCards = JSON.parse(productCardsJson) || [];
 
@@ -118,6 +118,41 @@ function displayCard() {
 }
 displayCard();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function displayNewCards(){
     new_product_row.innerHTML = '';
     products.filter((el)=> {
@@ -135,15 +170,4 @@ function displayFilterCards(){
     })
 }
 displayFilterCards()
-
-function displayAllCard() {
-    product__row.innerHTML = "";
-    products.forEach((el) => {
-        product__row.innerHTML += getCard(el);
-    })
-}
-displayAllCard();
-
-
-
 
