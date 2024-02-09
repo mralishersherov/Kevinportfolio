@@ -1,0 +1,21 @@
+.vacancy{
+    margin-top: 40px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.number img{
+    max-width: 25px;
+}
+.number{
+    display: flex;
+}
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}

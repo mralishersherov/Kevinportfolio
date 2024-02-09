@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- header start  -->
+        <header>
+            <div class="container">
+                <div class="row">
+                <div class="logo">
+                    <img class="logo_first" src="./assets/imgs/logo.svg" alt="logo">
+                    <img class="logo_second" src="./assets/icons/logo_second.svg" alt="logo">
+                </div>
+                <div class="find">
+                    <div class="catalog">
+                        <img src="./assets/imgs/menu.svg" alt="svg">
+                        <a href="index.html" class="catalog_name">Каталог</a>
+                    </div>
+                    <div class="find_poduct">
+                        <input placeholder="Найти товар" type="text">
+                        <img src="./assets/imgs/search.svg" alt="svg">
+                    </div>
+                </div>
+       
+                <div class="view">
+                    <div class="heart">
+                        <img src="./assets/imgs/Shape (Stroke).svg" alt="svg">
+                        <div>
+                            <p>Избранное</p>
+                            <span class="like_count">0</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/imgs/Frame 211.svg" alt="svg">
+                        <p>Заказы</p>
+                    </div>
+                    <div class="cart">
+                        <img src="./assets/imgs/shopping-cart.svg" alt="svg">
+                        <p>Корзина</p>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <img src="./assets/imgs/avatar.png" alt="svg">
+                    <button class="avatar_name">Алексей</button>
+                </div>
+                <div class="modal_wrapper">
+                   <div class="modal">
+                       <h4>Вход</h4>
+                       <form >
+                           <div class="form_group">
+                               <label for="phone">Телефон</label>
+                               <input type="number" name="phone" id="phone">
+                           </div>
+                           <button class="connect">Вход</button>
+                       </form>
+                   </div>
+               </div>
+            </div>
+            </div>
+           
+           </header>
+        <!-- header  end   -->
+
+        <div class="transition">
+            <div class="container">
+                <div class="row">
+                    <a class="busic" href="index.html">Главная</a>
+                <img src="./assets/imgs/chevron-right.svg" alt="svg">
+                <a class="favor" href="favorites.html">Избраное</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <section class="aside">
+            <div class="container">
+                <aside>
+                    <h1>Избраное</h1>
+                        <div class="row_s">
+                        <div class="filter">
+                            <p>Фильтр</p>
+                        </div>
+                        <div class="delete">
+                            <p>Цена</p>
+                            <button>Очистить</button>
+                        </div>
+                        <div class="price-input">
+                            <div class="field">
+                              <span>Min</span>
+                              <input type="number" class="input-min" value="2500">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                              <span>Max</span>
+                              <input type="number" class="input-max" value="7500">
+                            </div>
+                          </div>
+                          <div class="slider">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                          </div>
+                        </div>
+                        <div class="razdel">
+                        <a class="milk" href="!#">Молоко</a>
+                        <a class="sliv" href="!#">Сливки</a>
+                        <a class="egg" href="!#">Яйцо</a>
+                        </div>
+                        <div class="innal">
+                            <div class="toggle-switch">
+                                <input class="toggle-input" id="toggle" type="checkbox">
+                                <label class="toggle-label" for="toggle"></label>
+                            </div>                              
+                            <p class="inn">В наличии</p>
+                        </div>
+                        <div class="btn-pri">
+                            <button>Применить</button>
+                        </div>
+                    </aside>
+                    <div class="cards_row">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="row_footer">
+                <div class="logo_third">
+                    <img src="./assets/icons/logo_third.svg" alt="logo">
+                </div>
+               <div class="both">
+                <nav>
+                    <ul>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Статьи</a></li>
+                        <li><a href="">Политика обработки персональных данных</a></li>
+                    </ul>
+                </nav>
+                <div class="information">
+                    <div class="iconss">
+                    <img src="./assets/icons/instagram.svg" alt="svg">
+                    <img src="./assets/icons/vkontakte.svg" alt="svg">
+                    <img src="./assets/icons/facebook.svg" alt="svg">
+                    <img src="./assets/icons/ok.svg" alt="svg">
+                    </div>
+                    <div class="call">
+                        <img src="./assets/icons/phone.svg" alt="svg">
+                        <p>8 800 777 33 33</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end   -->
+        <script src="./javascript/const.js"></script>
+        <script src="./javascript/product_data.js"></script>
+        <script src="./javascript/rating_product.js"></script>
+        <script src="javascript/footer.js"></script>
+        <script src="./javascript/cart.js"></script>
+        <script src="./javascript/favorites.js"></script>
+</body>
+</html>

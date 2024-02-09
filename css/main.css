@@ -11,7 +11,12 @@
 @import url("aksiya.css");
 @import url("card.css");
 @import url("footer.css");
+@import url("pagination.css");
+@import url("about_us.css");
+@import url("contact.css");
+@import url("vacansy.css");
 /* ---------------------------- */
+@import url("favorite.css");
 *{
     padding: 0;
     margin: 0;

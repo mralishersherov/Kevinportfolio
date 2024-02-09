@@ -1,5 +1,7 @@
 let product__row = document.querySelector('.product__row');
-
+const new_product_row = document.querySelector('.new_product__row');
+const filter_product = document.querySelector('.filter__product');
+const card_favorite = document.querySelector('.cards_row')
 let productCardsJson = localStorage.getItem(CART);
 let productCards = JSON.parse(productCardsJson) || [];
 
@@ -10,19 +12,48 @@ function countProduct(){
     product__row.textContent = productCards.lenght
 }
 
-
+ 
 function addToCart(id){
     let product = products.find((el) => el.id === id);
     let chek = productCards.find((el) => el.id === id);
 
     if(chek) {
         product.quantity++;
+        Toastify({
+            text: "This is a toast",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
         productCards = getCard.map((el) => {
             return el.id === id ? product : el;
+            
         });
     }else{
         product.quantity = 1;
         productCards.push(product);
+        Toastify({
+            text: "This is a toast",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     }
     localStorage.setItem(CART, JSON.stringify(productCards))  
 }
@@ -40,11 +71,10 @@ function addToFavorite(id){
 
 
 function getCard(item) {
-    let { id, image, description, discount, rating, price, } = item;
+    let { id, image, description, discount, rating, price,isNew} = item;
     let isFavorite = favoriteProductsCards.find((el) => el.id === id);
-      
     return `
-    <div class="card item">
+    <div class="card item  list-item">
     <div class="card_head">
     <label class="like">
   <input ${isFavorite ? "checked" : ""} type="checkbox" onClick=" addToFavorite(${id})">
@@ -62,7 +92,10 @@ function getCard(item) {
             <div class="fee_with_card">
                 <h3> ${price} ₽</h3>
                 <p>С картой</p>
-            </div>
+                </div>
+                <div class="new__product">
+                <h3>${isNew?"NEW":''}</h3>
+                </div>
             <div class="payment_in_cash">
                 <h4>${discount}₽</h4>
                 <p>Обычная</p>
@@ -91,7 +124,50 @@ displayCard();
 
 
 
-    
-    
-    
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function displayNewCards(){
+    new_product_row.innerHTML = '';
+    products.filter((el)=> {
+        el.isNew = true
+        new_product_row.innerHTML += getCard(el)
+    })
+}
+displayNewCards()
+
+function displayFilterCards(){
+    filter_product.innerHTML = '';
+    products.filter((el)=> {
+        el.rating = 5
+        filter_product.innerHTML += getCard(el)
+    })
+}
+displayFilterCards()
+
