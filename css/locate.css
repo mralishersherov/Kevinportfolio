@@ -32,7 +32,49 @@
     background: var(--Main-Secondary, #70C05B);
     color: var(--Main-onSecondary, #FFF);
 }
-
+.namangan{
+    width: 100%;
+}
+.almalyk{
+    width: 100%;
+}
+.tashkent{
+    width: 100%;
+}
+.ap-tab-container{
+    width: 100%;
+}
+@media (max-width:1000px) {
+    .container{
+        max-width: 1000px;
+    }
+    .name_locate{
+        font-size: 24px;
+    }
+    .big_map iframe{
+        width: 1000px !important;
+    }
+    .namangan{
+        width: 940px;
+    }
+    .almalyk{
+        width: 940px;
+    }
+    .tashkent{
+        width: 940px;
+    }
+}
+@media (max-width:799px) {
+    .namangan{
+        width: 750px;
+    }
+    .almalyk{
+        width: 750px;
+    }
+    .tashkent{
+        width: 750px;
+    }
+}
 @media (max-width:737px) {
     .container{
         max-width: 737px;
@@ -43,7 +85,49 @@
     .big_map iframe{
         width: 737px;
     }
+    .namangan{
+        width: 670px;
+    }
+    .almalyk{
+        width: 670px;
+    }
+    .tashkent{
+        width: 670px;
+    }
 }
+@media (max-width:563px) {
+    .container{
+        max-width: 563px;
+    }
+    .namangan{
+        width: 520px;
+    }
+    .almalyk{
+        width: 520px;
+    }
+    .tashkent{
+        width: 520px;
+    }
+
+    
+}
+@media (max-width:527px) {
+    .container{
+        max-width: 527px;
+    }
+    .namangan{
+        width: 460px;
+    }
+    .almalyk{
+        width: 460px;
+    }
+    .tashkent{
+        width: 460px;
+    }
+
+    
+}
+
 @media (max-width:360px) {
     .container{
         max-width: 360px;
@@ -53,5 +137,14 @@
     }
     .buttons_loc{
         flex-wrap: wrap;
+    }
+    .namangan{
+        width: 360px;
+    }
+    .almalyk{
+        width: 360px;
+    }
+    .tashkent{
+        width: 360px;
     }
 }

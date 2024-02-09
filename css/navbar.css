@@ -156,7 +156,69 @@ border-radius: 7px;
     top: 0;
     opacity: 1;
 }
+@media(max-width:1100px){
+    .container{
+        max-width: 1100px;
+        
+    }
+    .logo{
+        margin-right: 25px;
+    }
+    .find_poduct input{
+        padding-right: 150px;
+    }
+    .find{
+        margin-right: 25px;
+    }
+    .avatar_name{
+        display: none;
+    }
+}
+@media(max-width:1000px){
+    .container{
+        max-width: 1000px;
+        
+    }
+    .logo{
+        margin-right: 25px;
+    }
+    .find_poduct input{
+        padding-right: 130px;
+    }
+    .find{
+        margin-right: 20px;
+    }
+    .avatar_name{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .container{
+        max-width: 800px;
+    }
+    .logo{
+        margin-right: 10px;
+    }
+    .catalog_name{
+        display: none;
+    }
+    .avatar{
+        display: none;
+    }
+    .find_poduct input{
+        padding-right: 70px;
+    }
+    .find_poduct{
+        gap: 8px;
+    }
+    .find{
+        margin-right: 10px;
+    }
+}
 @media (max-width:737px) {
+    .container{
+        max-width: 737px;
+    }
     .logo .logo_first{
         display: none;
     }
@@ -185,7 +247,42 @@ border-radius: 7px;
         padding-right: 130px;
     }
 }
+@media (max-width:600px) {
+    .container{
+        max-width: 600px;
+    }
+    .view{
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .container{
+        max-width: 500px;
+    }
+    .view{
+        display: none;
+    }
+}
+@media (max-width:495px) {
+    .container{
+        max-width: 495px;
+    }
+    .find_poduct input{
+        padding-right: 70px;
+    }
+}
+@media (max-width:400px) {
+    .container{
+        max-width: 400px;
+    }
+    .find_poduct input{
+        padding-right: 40px;
+    }
+}
 @media (max-width:360px) {
+    .container{
+        max-width: 360px;
+    }
     .catalog{
         display: none;
     }

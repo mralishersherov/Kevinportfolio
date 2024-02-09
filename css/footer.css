@@ -54,6 +54,9 @@ nav ul li a{
     gap: 16px;
 }
 @media (max-width:737px) {
+    .container{
+        max-width: 737px;
+    }
     .both{
         gap: 10px;
     }
@@ -82,7 +85,19 @@ nav ul li a{
         white-space: pre;
     }
 }
+@media (max-width:700px) {
+    .both{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width:360px) {
+    .container{
+        max-width: 360px;
+    }
     .both{
         flex-direction: column-reverse;
         align-items: none;  
