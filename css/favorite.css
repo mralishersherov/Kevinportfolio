@@ -278,9 +278,42 @@ width: 272px;
   }
  .aside .container{
     display: flex;
+    gap: 30px;
   }
   .cards_row{
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width:800px) {
+    .container{
+      max-width: 800px;
+    }
+    aside{
+      display: none;
+    }
+    .both{
+      gap: 0px;
+    }
+  }
+  @media (max-width:520px) {
+    .container{
+      max-width: 520px;
+    }
+    .cards_row{
+    
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    } 
+  }
+  @media (max-width:400px) {
+    .container{
+      max-width: 400px;
+    }
+    .cards_row{
+    
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+    } 
   }
