@@ -17,6 +17,7 @@
 @import url("vacansy.css");
 /* ---------------------------- */
 @import url("favorite.css");
+
 *{
     padding: 0;
     margin: 0;
@@ -24,6 +25,7 @@
     text-decoration: none;
     list-style-type: none;
 }
+
 html{
     background: var(--Main-BGPage, #FBF8EC);
 

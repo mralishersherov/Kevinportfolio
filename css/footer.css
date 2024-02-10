@@ -28,7 +28,7 @@ nav ul li a{
 .both{
     display: flex;
     /* align-items: center; */
-    gap: 132px;
+    gap: 86px;
 }
 .information{
     display: flex;
