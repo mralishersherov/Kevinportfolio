@@ -23,6 +23,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    outline: 1px solid red;
 }
 html{
     background: var(--Main-BGPage, #FBF8EC);

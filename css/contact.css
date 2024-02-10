@@ -7,13 +7,12 @@
     font-size: 64px;
 }
 
-
-
 .contact_text{
     margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 10px;
+    /* justify-content: center; */
 }
 
 .contact_text p{
@@ -32,8 +31,42 @@
     font-style: italic;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
 .contact_text .red{
     color: #AF212B;
     font-size: 35px;
     font-style: inherit;
 }
+
+ @media (max-width: 900px){
+    .footer{
+        /* max-width: 100%;
+        margin: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+     .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ }
+ @media (max-width: 360px){
+    .footer{
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ }
