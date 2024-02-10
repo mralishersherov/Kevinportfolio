@@ -90,6 +90,15 @@ header{
     line-height: 150%;
     color: var(--Main-onSurface, #414141);
 }
+.izbran{
+    text-align: center;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--Main-onSurface, #414141);
+}
 .heart{
     position: relative;
 }

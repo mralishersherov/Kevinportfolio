@@ -5,28 +5,17 @@ console.log(cartData)
 function getCartProduct (item) {
   const {id, image, price, name, quantity, description } = item;
   return (
-    `<div class="item">
-    <div class="items">
-      <img src="${image}" alt="">
-      <div class="text">
-      <p class="korzina_name">
-        ${name}
-      </p>
-      <p class="price">${price} ₽ <span>за шт.</span></p>
-      </div>
-    </div>
-    <div class="item_right">
-      <button class="join_btn">
-        -
-      </button>
-      <button class="join_btn">
-        ${quantity}
-      </button>
-      <button class="join_btn">
-        +
-      </button>
-    </div>
-  </div>`
+    `<img src="${image}" alt="">
+    <div class="start_card">
+    <p class="korzina_name">
+      ${name}
+    </p>
+    <p class="price"><span>за шт.</span></p>
+    <div class="card_btn">
+      <button class="join_btn">-</button>
+      <button class="join_btn">${quantity}</button>
+      <button class="join_btn">+</button>
+    </div>`
   )
 }
 
