@@ -1,29 +1,32 @@
-.container {
-    max-width: 1208px;
-    margin: auto 0;
-}
+
 
 .home_header{
+    max-width: 100%;
     display: flex;
-    gap: 20px;
-    background-image: url(../images/header_backround.png);
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 20px; */
+    background: url(../images/header_backround.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.home_left{
-    width: 303px;
-    height: 202px;
-    flex-shrink: 0;
-}
+ .home_left img{
+    max-width: 557px;
+    margin-top: 70px;
+    margin-left: 50px;
+}    
 
 .home_right{
+    padding-left: 140px;    
     color: var(--Main-onSurface, #414141);
     text-align: center;
     font-family: Rubik;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
-    padding-top: 70px;
+    line-height: 70%;
+    /* padding-top: 70px; */
 }
 
 .stati__row{
@@ -37,6 +40,8 @@
 }
 
 .stati_card{
+    margin: auto;
+    padding-bottom: 20px;
     width: 376px;
     border-radius: 8px;
     background: #70c05b;
@@ -57,6 +62,7 @@
 }
 
 .card_number{
+    padding: 10px;
     color: var(--Grayscale-Hard, #8F8F8F);
     height: 18px;
     font-size: 12px;
@@ -67,6 +73,7 @@
 }
 
 .card_tittle{
+    padding: 10px;
     color: var(--Main-onSurface, #414141);
     height: 56px;
     font-size: 18px;
@@ -77,6 +84,7 @@
 }
 
 .card_text{
+    padding: 10px;
     color: var(--Main-onSurface, #414141);
     height: 96px;
     font-style: normal;
@@ -89,6 +97,7 @@
 
 .card_btn{
     /* height: 24px; */
+    margin: 10px;
     border-radius: 4px;
     background: var(--Main-Surface, #FFF);
     color: var(--Main-Secondary, #70C05B);
@@ -126,4 +135,23 @@
 .statti__btn p{
     font-size: 16px;
     color: #414141;
+}
+
+
+@media(max-width:884px){
+.home_header{
+    display: flex;
+    gap: 5;
+}
+    .home_left img{
+        max-width: 190px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }    
+    .home_right{
+        max-width: 376px;
+        height: 36px;
+        /* padding-left: 10px;*/
+        font-size: 1px;
+    }
 }

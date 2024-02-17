@@ -8,7 +8,7 @@ const products = [
       rating: 5,
       discount: 0,
       isNew:  true,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
       country: "Uzb",
     },
     {
@@ -21,7 +21,7 @@ const products = [
       rating: 5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const products = [
       rating: 5,
       discount: 20,
       isNew:  true,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const products = [
       rating: 5,
       discount: 20,
       isNew:  true,
-      image: "../images/card_img/kolbasa_palka.png",
+      image: "./images/card_img/kolbasa_palka.png",
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ const products = [
       rating: 3.5,
       discount: 50,
       isNew: false,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 7,
@@ -81,7 +81,7 @@ const products = [
       rating: 3.5,
       discount: 20,
       isNew:  true,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 8,
@@ -93,7 +93,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 9,
@@ -105,7 +105,7 @@ const products = [
       rating: 5,
       discount: 20,
       isNew:  true,
-      image: "../images/card_img/kolbasa_desna.png",
+      image: "./images/card_img/kolbasa_desna.png",
     },
     {
       id: 10,
@@ -117,7 +117,7 @@ const products = [
       rating: 4.5,
       discount: 0,
       isNew: false,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 11,
@@ -129,7 +129,7 @@ const products = [
       rating: 3.5,
       discount: 50,
       isNew:  true,
-      image: "../images/card_img/kolbasa_palka.png",
+      image: "./images/card_img/kolbasa_palka.png",
     },
     {
       id: 12,
@@ -141,7 +141,7 @@ const products = [
       rating: 4,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 13,
@@ -153,7 +153,7 @@ const products = [
       rating: 5,
       discount: 50,
       isNew:  true,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
     },
     {
       id: 14,
@@ -165,7 +165,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 15,
@@ -177,7 +177,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
     },
     {
       id: 16,
@@ -189,7 +189,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 17,
@@ -201,7 +201,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 18,
@@ -213,7 +213,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 19,
@@ -225,7 +225,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolbasa_palka.png",
+      image: "./images/card_img/kolbasa_palka.png",
     },
     {
       id: 20,
@@ -237,7 +237,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 21,
@@ -249,7 +249,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolbasa_desna.png",
+      image: "./images/card_img/kolbasa_desna.png",
     },
     {
       id: 22,
@@ -261,7 +261,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
     },
     {
       id: 23,
@@ -273,7 +273,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolobasa.png",
+      image: "./images/card_img/kolobasa.png",
     },
     {
       id: 24,
@@ -285,7 +285,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolbasa_palka.png",
+      image: "./images/card_img/kolbasa_palka.png",
     },
     {
       id: 25,
@@ -297,7 +297,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
     },
     {
       id: 26,
@@ -309,7 +309,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
     },
     {
       id: 27,
@@ -321,7 +321,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolbasa_desna.png",
+      image: "./images/card_img/kolbasa_desna.png",
     },
     {
       id: 28,
@@ -333,7 +333,7 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/blin.png",
+      image: "./images/card_img/blin.png",
     },
     {
       id: 29,
@@ -345,7 +345,8 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/moloko.png",
+      image: "./images/card_img/moloko.png",
+      
     },
     {
       id: 30,
@@ -357,6 +358,6 @@ const products = [
       rating: 4.5,
       discount: 20,
       isNew: false,
-      image: "../images/card_img/kolbasa_palka.png",
+      image: "./images/card_img/kolbasa_palka.png",
     },
   ];
